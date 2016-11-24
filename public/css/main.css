@@ -1,0 +1,36 @@
+.mainDiv{
+	border: 1px solid #d3d3d3;
+	padding: 5px;
+	background: #cbbeb4;
+}
+.directiveExample{
+	border: 1px solid #d3d3d3;
+	padding: 5px;
+	margin: 10px 0px 5px 10px;
+}
+.firstParent{
+	border: 1px solid #d3d3d3;
+	padding: 5px;
+	margin: 10px 0px 5px 10px;
+}
+.firstChild{
+	border: 1px solid #d3d3d3;
+	padding: 5px;
+	margin: 10px 0px 5px 10px;
+}
+.productParent{
+	border: 1px solid #d3d3d3;
+	padding: 5px;
+	margin: 10px 0px 5px 10px;
+}
+.product{
+	border: 1px solid #d3d3d3;
+	padding: 5px;
+	margin: 10px 0px 5px 0px;
+}
+.productChild{
+	border: 1px solid #d3d3d3;
+	padding: 5px;
+	margin: 10px 0px 5px 0px;
+}
+	

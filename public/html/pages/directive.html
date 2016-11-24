@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Directive Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+	<!-- <script type="text/javascript" src="oneCtoA.js"></script> -->
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="directive.js"></script>
+  <script type="text/javascript" src="directiveController.js"></script>
+  <script type="text/javascript" src="directiveService.js"></script>
+
+</head>
+<body ng-app="directiveExample">
+ 	<div class="mainDiv">
+ 		<h4>AngularJS lets you extend HTML with new attributes called Directives.</h4>
+ 		<h4>The ng-app directive initializes an AngularJS application.</h4>
+ 		<h4>The ng-init directive initializes application data.</h4>
+ 		<h4>The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.</h4>
+ 		<h4>The ng-app directive also tells AngularJS that the <div> element is the "owner" of the AngularJS application.</h4>
+
+ 		<div class="first">
+ 			<hello-word></hello-word> 			
+ 		</div>
+
+ 		<div class="second">
+ 			<h3>
+ 			The ng-model directive can provide status for application data (invalid, dirty, touched, error):
+ 			</h3>
+ 			<form name="myForm" ng-init="myText = 'post@myweb.com'">
+
+			Email:
+			<input type="email" name="myAddress" ng-model="myText" required>
+			<p>Edit the e-mail address, and try to change the status.</p>
+			<h1>Status</h1>
+			<p>Valid: {{myForm.myAddress.$valid}} (if true, the value meets all criteria).</p>
+			<p>Dirty: {{myForm.myAddress.$dirty}} (if true, the value has been changed).</p>
+			<p>Touched: {{myForm.myAddress.$touched}} (if true, the field has been in focus).</p>
+
+			</form>
+ 		</div>
+ 	</div>
+</body>
+</html>

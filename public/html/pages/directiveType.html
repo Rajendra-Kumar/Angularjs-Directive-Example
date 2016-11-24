@@ -1,0 +1,32 @@
+<div class="mainDiv">
+ 	
+ 	<div class="directiveExample">
+ 		<h4>Directive Example with nested Routing</h4>
+ 		<ul>
+ 			<li><a ui-sref=".first">Shared Scope</a></li>
+ 			<li><a ui-sref=".second">Isolated Scope</a></li>
+ 			<li><a ui-sref="rootscope">rootScope</a></li>
+ 		</ul>
+
+ 		<div ui-view></div>
+ 	</div>
+
+ 	<div class="directiveExample">
+ 		
+ 		<h4>Compile function example</h4>
+ 		{{newName}}
+ 		<input type="checkbox" name="vehicle" ng-model="car" value="Car">I have a Audi
+ 		<form name="frm1" novalidate>
+			Name:-<input type=text ng-model="Customer.CustomerName" name="CustomerName" required />
+			Email :- <input type=email ng-model="Customer.Email" name="Email" />
+			<input type=submit value="Click here" ng-disabled="!(frm1.$valid)"/>
+		</form>
+
+ 		<compile-example newname="newName"></compile-example>
+ 		
+ 	</div>
+
+
+ 		
+	
+</div>

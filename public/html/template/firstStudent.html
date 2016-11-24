@@ -1,0 +1,22 @@
+<h3>{{firstStudent.name}}</h3>
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		{{firstStudent.name}} {{firstStudent.age}}
+	</div>
+
+	<div ng-show="firstStudent.subject">
+		Subject: 
+		<ul ng-repeat="s in firstStudent.subject">
+			<li>{{s}}</li>
+		</ul>
+		<input type="button" value="click" ng-click="setGrade(firstStudent)"></input>	
+	</div>
+	<div ng-show="firstStudent.grade">
+		{{firstStudent.grade}}
+	</div>
+
+	<div ng-show="!firstStudent.grade">
+		<button class="btn btn-success" ng-click="setGrade(firstStudent)">Set Grade</button>
+	</div>
+</div>
