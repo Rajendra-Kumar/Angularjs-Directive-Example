@@ -13,20 +13,58 @@
 
  	<div class="directiveExample">
  		
- 		<h4>Compile function example</h4>
+ 		<h4>Compile function and Link function example</h4>
+ 		<h5>This input example of $watch function</h5>
  		{{newName}}
  		<input type="checkbox" name="vehicle" ng-model="car" value="Car">I have a Audi
- 		<form name="frm1" novalidate>
-			Name:-<input type=text ng-model="Customer.CustomerName" name="CustomerName" required />
-			Email :- <input type=email ng-model="Customer.Email" name="Email" />
-			<input type=submit value="Click here" ng-disabled="!(frm1.$valid)"/>
-		</form>
 
  		<compile-example newname="newName"></compile-example>
  		
  	</div>
 
+ 	<div class="directiveExample">
+ 		<h4>Custom Filter Example</h4>
+		<div class="container">
+		  <div class="row">
+		    <div class="col-lg-6 col-lg-offset-3">
+		      <div ng-app="filters">
+		        <div ng-controller="filterController">
+		          <div class="panel panel-default">
+		             <div class="panel-body">
+		               <h4 class="text-center">AngularJS Filter - Ordinal Numbers</h4>
+		               <p><strong>Original:</strong></p>
+		               <ul class="list">
+		                 <li>{{example1}}</li>
+		                 <li>{{example2}}</li>
+		                 <li>{{example3}}</li>
+		                 <li>{{example4}}</li>
+		                 <li>{{example5}}</li>
+		                 <li>{{example6}}</li>
+		                 <li>{{example7}}</li>
+		                 <li>{{example8}}</li>
+		               </ul>
+		               <p><strong>Ordinal Filter:</strong></p>
+		               <ul class="list">
+		                 <li>{{example1 | ordinal}}</li>
+		                 <li>{{example2 | ordinal}}</li>
+		                 <li>{{example3 | ordinal}}</li>
+		                 <li>{{example4 | ordinal}}</li>
+		                 <li>{{example5 | ordinal}}</li>
+		                 <li>{{example6 | ordinal}}</li>
+		                 <li>{{example7 | ordinal}}</li>
+		                 <li>{{example8 | ordinal}}</li>
+		               </ul>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		  	</div>
+		  </div>
+		</div>
+ 	</div>
 
- 		
+ 	<div class="directiveExample">
+ 		<h4>Factory Example</h4>
+ 	</div>
 	
 </div>

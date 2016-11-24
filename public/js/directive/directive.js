@@ -33,7 +33,7 @@ app.directive('productPara', function (){
 			templateUrl: 'html/template/product.html',
 			controller: function ($scope){
 				$scope.nameChange = function (data){
-					console.log('click on nameChange function in directive controller')
+					//console.log('click on nameChange function in directive controller')
 					data.name = "Yes Change it";  // work on change value when using = scope;
 
 					//$scope.name = "Yes Change it"; 	// work on change value when using @ scope;
@@ -73,10 +73,10 @@ app.directive('compileExample', function () {
 			},*/
 
 			link: function (scope,element,attribute) {
-				console.log(scope.newname);
+				//console.log(scope.newname);
 				scope.$watch('newname', function (newVal, oldVal, scope) {
-					console.log('Old Value: '+oldVal);
-					console.log('New Value: '+newVal);
+					//console.log('Old Value: '+oldVal);
+					//console.log('New Value: '+newVal);
 				});
 			}
 		}

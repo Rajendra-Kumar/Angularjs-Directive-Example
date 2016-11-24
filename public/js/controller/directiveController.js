@@ -5,8 +5,8 @@ app.controller('directiveController', ['$rootScope', '$scope', function ($rootSc
 	$rootScope.newName = $scope.newName;
 	$scope.car     = true;
 	$scope.$watch('car', function (newVal, oldVal, scope) {
-		console.log('Old Value: '+oldVal);
-		console.log('New Value: '+newVal);
+		//console.log('Old Value: '+oldVal);
+		//console.log('New Value: '+newVal);
 	})
 }]);
 app.controller('firstController', ['$rootScope', '$scope', function ($rootScope, $scope){
@@ -57,5 +57,14 @@ app.controller('rootscopeController', ['$rootScope', '$scope',function ($rootSco
 	console.log($scope.subject)
 }])
 
-
+app.controller('filterController',['$rootScope', '$scope', function ($rootScope, $scope) {
+	$scope.example1 = 1;
+  	$scope.example2 = 2;
+  	$scope.example3 = 3;
+  	$scope.example4 = 4;
+ 	$scope.example5 = 777;
+  	$scope.example6 = 1901;
+ 	$scope.example7 = 0;
+  	$scope.example8 = 'Seven'
+}])
 
