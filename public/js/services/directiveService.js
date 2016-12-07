@@ -24,3 +24,41 @@ app.filter('ordinal', function(){
   }
 });
 
+app.service('myService', function() {
+  console.log('myService calling..');
+  // service is just a constructor function
+  // that will be called with 'new'
+
+  this.sayHello = function(name) {
+     this.name = 'yes';
+     return "Hi " + name + "!";
+  };
+  this.getMsg = function (name) {
+    return this.name;
+  }
+});
+
+app.factory('myFactory', function() {
+  console.log('myFactory calling..');
+
+  // factory returns an object
+  // you can run some code before
+
+  /*return {
+    sayHello : function(name) {
+      return "Hi " + name + "!";
+    },
+    getMsg : function (name) {
+      return name;
+    }
+  }*/
+
+
+  var Msg  = function (name) {
+    this.factoryMsg = name;
+    this.getMsg = function () {
+      return this.factoryMsg;
+    }
+  }
+  return Msg;
+});
