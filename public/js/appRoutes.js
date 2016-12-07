@@ -25,6 +25,11 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 templateUrl: "html/pages/rootscope.html",
                 controller: "rootscopeController"
             })
+            .state('filter', {
+                url: "/filter",
+                templateUrl: "html/pages/filter.html",
+                controller: "filterMethodController"
+            })
 
             /*.state('signup', {
                 url: "/signup",

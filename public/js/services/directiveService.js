@@ -62,3 +62,19 @@ app.factory('myFactory', function() {
   }
   return Msg;
 });
+
+function getObject(){
+  this.getName = function(){
+    return "Get Name by factory calling object";
+  }
+}
+
+app.factory('newFactory', function () {
+    return new getObject();
+})
+app.provider('myProvider', function() {
+  console.log('myProvider calling..');
+  this.$get = function (){
+    return "My Value";
+  }
+});

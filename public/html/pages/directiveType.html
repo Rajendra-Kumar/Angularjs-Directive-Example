@@ -6,6 +6,7 @@
  			<li><a ui-sref=".first">Shared Scope</a></li>
  			<li><a ui-sref=".second">Isolated Scope</a></li>
  			<li><a ui-sref="rootscope">rootScope</a></li>
+ 			<li><a ui-sref="filter">Filter, map and reduce Method</a></li>
  		</ul>
 
  		<div ui-view></div>
@@ -67,12 +68,15 @@
 
  	<div class="directiveExample">
  		<h4>Factory and service Example</h4>
- 			{{service}}<br>
+ 			{{service}}<br>			<!-- service Provider-->
  			<!-- {{factory}} -->
- 			{{msg}}<br>
- 			{{newmsg}}<br>
+ 			{{msg}}<br>			<!-- Factory Provider-->
+ 			{{newmsg}}<br>       <!-- Factory Provider-->
+ 			{{factoryValue}}<br>  <!-- Factory Provider use and call object-->
  			<input type="text" value="{{service}}"></input>
  			<span ng-bind="service"></span>
+ 			<br>
+ 			{{providerValue}} <!-- Service Provider-->
  	</div>
 	
 </div>
