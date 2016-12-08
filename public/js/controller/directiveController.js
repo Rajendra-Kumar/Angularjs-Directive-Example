@@ -20,7 +20,7 @@ app.controller('directiveController', ['$rootScope', '$scope', 'myService', 'myF
 	$scope.factoryValue = newFactory.getName();
 	console.log('newFactory function: '+newFactory.getName());
 
-	$scope.providerValue = myProvider;  // provider calling.
+	$scope.providerValue = myProvider;  // provider calling here.
 
 }]);
 app.controller('firstController', ['$rootScope', '$scope', 'myService', 'myFactory', 'myProvider','newFactory',function ($rootScope, $scope, myService, myFactory, myProvider,newFactory){

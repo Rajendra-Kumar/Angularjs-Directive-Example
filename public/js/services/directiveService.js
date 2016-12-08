@@ -73,7 +73,7 @@ app.factory('newFactory', function () {
     return new getObject();
 })
 app.provider('myProvider', function() {
-  console.log('myProvider calling..');
+  console.log('myProvider calling here..');
   this.$get = function (){
     return "My Value";
   }
